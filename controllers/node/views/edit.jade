@@ -1,0 +1,14 @@
+link(rel='stylesheet', href='/style.css')
+h1= node.name
+form(action='/host/#{node.id}?_method=put', method='post')
+  label= 'Name: '
+    input(type='text', name='node[name]', value='#{node.name}')
+  input(type='submit', value='Update')
+
+form(action='/host/#{node.id}/container', method='post')
+  label= 'container: '
+    br
+    input(type='text', name='container[name]', placeholder='Name')
+    br
+    input(type='text', name='container[image]', placeholder='Image')
+  input(type='submit', value='Add')

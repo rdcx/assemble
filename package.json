@@ -1,0 +1,38 @@
+{
+  "name": "assemble",
+  "version": "1.0.0",
+  "description": "Drag and drop deployments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ross-chater/assemble.git"
+  },
+  "keywords": [
+    "Docker",
+    "assemble",
+    "deployment"
+  ],
+  "author": "Ross Chater",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ross-chater/assemble/issues"
+  },
+  "homepage": "https://github.com/ross-chater/assemble#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "dockerizer": "^0.1.5",
+    "dockerode": "^2.2.10",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "fs": "0.0.2",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.13",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.1"
+  }
+}

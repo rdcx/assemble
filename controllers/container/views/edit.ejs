@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Edit
+        <%= container.name %>
+    </title>
+</head>
+
+<body>
+    <h1><%= container.name %></h1>
+    <form action="/container/<%= container.id %>?_method=put" method="post">
+        <label>Name:
+            <input type="text" name="container[name]" value="<%= container.name %>">
+        </label>
+        <label>Image:
+            <input type="text" name="container[image]" value="<%= container.image %>">
+        </label>
+        <input type="submit" value="Update">
+    </form>
+</body>
+
+</html>

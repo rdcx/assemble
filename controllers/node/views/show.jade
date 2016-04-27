@@ -1,0 +1,17 @@
+link(rel='stylesheet', href='/style.css')
+h1= node.name + ' '
+  a(href='/host/#{node.id}/edit') edit
+
+if (hasMessages)
+  ul#messages
+    each msg in messages
+      li= msg
+
+if (node.containers.length)
+  p View #{node.name}'s containers:
+  ul
+    each container in node.containers
+      li
+        a(href='/container/#{container.id}')= container.name
+else
+  p No hosts!

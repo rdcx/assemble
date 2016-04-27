@@ -1,0 +1,10 @@
+link(rel='stylesheet', href='/style.css')
+h1= 'Add Node'
+form(action='/node', method='post')
+  label= 'Name: '
+    input(type='text', name='node[name]')
+  br
+  label= 'IP: '
+    input(type='text', name='node[ip]')
+  br
+  input(type='submit', value='Add')

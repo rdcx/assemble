@@ -1,0 +1,7 @@
+link(rel='stylesheet', href='/style.css')
+h1 Nodes
+p Click a node below to view their containers.
+ul
+  each node in nodes
+    li
+      a(href='/node/#{node.id}')= node.name
